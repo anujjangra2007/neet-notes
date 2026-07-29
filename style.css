@@ -1,1 +1,360 @@
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
+body{
+background:#eefaf0;
+color:#222;
+}
+
+header{
+background:linear-gradient(135deg,#0f9d58,#34c759);
+color:white;
+padding:20px;
+position:sticky;
+top:0;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+nav{
+margin-top:15px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+.hero{
+text-align:center;
+padding:70px 20px;
+}
+
+.hero h1{
+font-size:48px;
+color:#0f9d58;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#0f9d58;
+color:white;
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+display:inline-block;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#087a43;
+transform:scale(1.05);
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🧬 NEET NOTES
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Physics</a>
+<a href="#">Chemistry</a>
+<a href="#">Biology</a>
+<a href="#">Notes</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Welcome Future Doctor 👨‍⚕️</h1>
+
+<p>
+Best FREE Notes for NEET Preparation
+</p>
+
+<a href="#" class="btn">
+Start Learning
+</a>
+
+</section><style>
+.subjects{
+max-width:1200px;
+margin:60px auto;
+padding:20px;
+}
+
+.subjects h2{
+text-align:center;
+font-size:36px;
+color:#0f9d58;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 5px 18px rgba(0,0,0,.12);
+transition:.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 12px 30px rgba(0,0,0,.2);
+}
+
+.card h3{
+font-size:28px;
+margin-bottom:15px;
+color:#0f9d58;
+}
+
+.card p{
+font-size:16px;
+margin-bottom:20px;
+line-height:1.6;
+}
+
+.card button{
+background:#0f9d58;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:30px;
+cursor:pointer;
+font-size:16px;
+font-weight:bold;
+transition:.3s;
+}
+
+.card button:hover{
+background:#087a43;
+}
+</style>
+
+<section class="subjects">
+
+<h2>Choose Your Subject</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📘 Physics</h3>
+<p>Complete NEET Physics Notes, Formula Sheets and PYQs.</p>
+<button>Open</button>
+</div>
+
+<div class="card">
+<h3>🧪 Chemistry</h3>
+<p>Physical, Organic and Inorganic Notes with MCQs.</p>
+<button>Open</button>
+</div>
+
+<div class="card">
+<h3>🌿 Biology</h3>
+<p>NCERT Based Biology Notes, Diagrams and Practice Questions.</p>
+<button>Open</button>
+</div>
+
+</div>
+
+</section><style>
+.search-section{
+max-width:1100px;
+margin:50px auto;
+padding:20px;
+text-align:center;
+}
+
+.search-section h2{
+color:#0f9d58;
+font-size:34px;
+margin-bottom:20px;
+}
+
+.search-box{
+width:90%;
+max-width:600px;
+padding:15px;
+font-size:18px;
+border:2px solid #0f9d58;
+border-radius:30px;
+outline:none;
+}
+
+.notes{
+max-width:1100px;
+margin:60px auto;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.note-card{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+text-align:center;
+transition:.3s;
+}
+
+.note-card:hover{
+transform:scale(1.05);
+}
+
+.note-card h3{
+color:#0f9d58;
+margin-bottom:15px;
+}
+
+.download-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:#0f9d58;
+color:white;
+text-decoration:none;
+border-radius:25px;
+font-weight:bold;
+}
+
+.download-btn:hover{
+background:#087a43;
+}
+</style>
+
+<section class="search-section">
+
+<h2>🔍 Search Notes</h2>
+
+<input
+type="text"
+class="search-box"
+placeholder="Search Biology, Physics, Chemistry...">
+
+</section>
+
+<section class="notes">
+
+<div class="note-card">
+<h3>📘 Physics Notes</h3>
+<p>Chapter-wise handwritten notes.</p>
+<a href="#" class="download-btn">Download</a>
+</div>
+
+<div class="note-card">
+<h3>🧪 Chemistry Notes</h3>
+<p>Complete NEET chemistry PDFs.</p>
+<a href="#" class="download-btn">Download</a>
+</div>
+
+<div class="note-card">
+<h3>🌿 Biology Notes</h3>
+<p>NCERT based biology PDFs.</p>
+<a href="#" class="download-btn">Download</a>
+</div>
+
+</section><style>
+footer{
+background:#0f9d58;
+color:white;
+text-align:center;
+padding:40px 20px;
+margin-top:60px;
+}
+
+.dark-btn{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#222;
+color:white;
+border:none;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.dark{
+background:#111;
+color:white;
+}
+
+.dark .card,
+.dark .note-card{
+background:#222;
+color:white;
+}
+
+.dark .hero h1,
+.dark .subjects h2,
+.dark .search-section h2,
+.dark .card h3,
+.dark .note-card h3{
+color:#4cff88;
+}
+</style>
+
+<footer>
+<h2>🧬 NEET NOTES</h2>
+<p>Free NEET Study Material for Everyone</p>
+<br>
+<p>Made with ❤️ by <b>Anuj Jangra</b></p>
+<p>© 2026 All Rights Reserved</p>
+</footer>
+
+<button class="dark-btn" onclick="darkMode()">🌙</button>
+
+<script>
+function darkMode(){
+document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
