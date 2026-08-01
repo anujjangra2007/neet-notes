@@ -12,7 +12,20 @@ padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
 }
+.header-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
 
+.datetime{
+color:white;
+font-size:15px;
+font-weight:bold;
+text-align:right;
+line-height:1.4;
+}
 body{
 background:#eefaf0;
 color:#222;
@@ -102,7 +115,7 @@ transform:scale(1.05);
 <a href="#">Notes</a>
 <a href="contact.html">Contact</a>
 </nav>
-
+<div id="datetime" class="datetime"></div>
 </header>
 
 <section class="hero">
@@ -345,8 +358,15 @@ color:white;
 .dark .note-card h3{
 color:#4cff88;
 }
+.datetime{
+color:white;
+font-size:15px;
+font-weight:bold;
+margin-top:10px;
+text-align:right;
+}
 </style>
-
+<div id="datetime" class="datetime"></div>
 <footer>
 <h2>🧬 NEET NOTES</h2>
 <p>Free NEET Study Material for Everyone</p>
@@ -356,7 +376,32 @@ color:#4cff88;
 </footer>
 
 <button class="dark-btn" onclick="darkMode()">🌙</button>
+<script>
+function updateDateTime() {
+  const now = new Date();
 
+  const date = now.toLocaleDateString("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric"
+  });
+
+  const time = now.toLocaleTimeString("en-IN", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false
+  });
+
+  const dt = document.getElementById("datetime");
+  if (dt) {
+    dt.innerHTML = "🕒 " + time + " | 📅 " + date;
+  }
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+</script>
 <script src="script.js"></script>
 </body>
 </html>
