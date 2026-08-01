@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chapter 1 - Sexual Reproduction in Floweing Plant</title>
 
+<style>
+body{
+font-family:Arial;
+margin:0;
+background:#f5f5f5;
+text-align:center;
+}
+header{
+background:#0a8f3d;
+color:white;
+padding:20px;
+font-size:30px;
+font-weight:bold;
+}
+iframe{
+width:90%;
+height:800px;
+border:none;
+margin-top:20px;
+}
+a{
+display:inline-block;
+margin:20px;
+padding:15px 30px;
+background:#0a8f3d;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-size:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>Chapter 1 - Sexual Reproduction in Floweing Plant</header>
+
+<iframe src="https://drive.google.com/file/d/1G4wPaKHKF2kGuYZv8cHOUrxHrslns7ur/preview"></iframe>
+
+<br>
+
+<a href="https://drive.google.com/file/d/1G4wPaKHKF2kGuYZv8cHOUrxHrslns7ur/view" target="_blank">
+Open PDF
+</a>
+
+</body>
+</html>
