@@ -69,6 +69,13 @@ background:#16a34a;
 color:white;
 text-decoration:none;
 border-radius:8px;
+}.class-content{
+    display:none;
+}
+
+.class-title{
+    cursor:pointer;
+    user-select:none;
 }
 </style>
 
@@ -86,8 +93,8 @@ border-radius:8px;
 
 <div class="section">
 
-<h2>📗 Class 11</h2>
-
+<h2 class="class-title" onclick="toggleClass('class11')">🟩 Class 11 ▼</h2>
+<div id="class11" class="class-content">
 <div class="chapter">Chapter 1 📏 Units & Measurements</div>
 <div class="chapter">Chapter 2 ➡ Motion in a Straight Line</div>
 <div class="chapter">Chapter 3 ↗ Motion in a Plane</div>
@@ -102,13 +109,13 @@ border-radius:8px;
 <div class="chapter">Chapter 12 💨 Kinetic Theory</div>
 <div class="chapter">Chapter 13 🌀 Oscillations</div>
 <div class="chapter">Chapter 14 🌊 Waves</div>
-
+</div>
 </div>
 
 <div class="section">
 
-<h2>📘 Class 12</h2>
-
+<h2 class="class-title" onclick="toggleClass('class11')">🟩 Class 11 ▼</h2>
+<div id="class12" class="class-content">
 <div class="chapter">Chapter 1 ⚡ Electric Charges & Fields</div>
 <div class="chapter">Chapter 2 🔋 Electrostatic Potential & Capacitance</div>
 <div class="chapter">Chapter 3 🔌 Current Electricity</div>
@@ -123,10 +130,25 @@ border-radius:8px;
 <div class="chapter">Chapter 12 🧬 Atoms</div>
 <div class="chapter">Chapter 13 ☢ Nuclei</div>
 <div class="chapter">Chapter 14 💻 Semiconductor Electronics</div>
-
+</div>
 </div>
 
 </div>
+</div>
 
+<script>
+function toggleClass(id){
+    const section = document.getElementById(id);
+
+    if(section.style.display === "block"){
+        section.style.display = "none";
+    }else{
+        section.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
 </body>
 </html>
