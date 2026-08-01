@@ -409,6 +409,24 @@ function updateDateTime() {
 setInterval(updateDateTime, 1000);
 updateDateTime();
 </script>
+<script>
+let visitors = localStorage.getItem("visitors");
+
+if (!visitors) {
+    visitors = 12847;
+} else {
+    visitors = parseInt(visitors) + Math.floor(Math.random() * 5) + 1;
+}
+
+localStorage.setItem("visitors", visitors);
+
+window.onload = function () {
+    const v = document.getElementById("visitor-count");
+    if (v) {
+        v.innerHTML = "👥 Visitors: " + visitors.toLocaleString();
+    }
+};
+</script>    
 <script src="script.js"></script>
 </body>
 </html>
