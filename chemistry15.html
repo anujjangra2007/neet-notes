@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Chapter 1 - Solutions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter 1 - Solutions | Chemistry NCERT</title>
 
 <style>
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
     font-family:Arial,sans-serif;
-    background:#f5f5f5;
+    background:#111827;
+    color:white;
     text-align:center;
 }
 
 header{
     background:#16a34a;
     color:white;
-    padding:20px;
+    padding:18px 10px;
     font-size:30px;
     font-weight:bold;
 }
@@ -30,46 +38,102 @@ header{
     font-weight:bold;
 }
 
-iframe{
-    width:95%;
-    height:85vh;
-    border:none;
-    background:white;
+.viewer{
+    width:96%;
+    max-width:1200px;
+    margin:10px auto;
+    background:#ffffff;
     border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
+    overflow:hidden;
+    box-shadow:0 0 15px rgba(0,0,0,.4);
+}
+
+iframe{
+    display:block;
+    width:100%;
+    height:80vh;
+    min-height:600px;
+    border:none;
 }
 
 .download{
     display:inline-block;
     margin:20px;
-    padding:12px 22px;
+    padding:13px 24px;
     background:#16a34a;
     color:white;
     text-decoration:none;
     border-radius:8px;
     font-weight:bold;
+    font-size:18px;
+}
+
+.download:hover{
+    background:#15803d;
+}
+
+footer{
+    padding:20px;
+    color:#ccc;
+}
+
+@media(max-width:600px){
+
+    header{
+        font-size:24px;
+        padding:15px 8px;
+    }
+
+    .back{
+        font-size:14px;
+        padding:9px 15px;
+    }
+
+    .viewer{
+        width:98%;
+    }
+
+    iframe{
+        height:75vh;
+        min-height:500px;
+    }
+
+    .download{
+        font-size:16px;
+        padding:12px 20px;
+    }
 }
 </style>
-
 </head>
 
 <body>
 
-<a href="chemistry.html" class="back">⬅ Back to Chemistry</a>
+<a href="chemistry.html" class="back">
+⬅ Back to Chemistry
+</a>
 
 <header>
 🧪 Chapter 1 : Solutions
 </header>
 
-<br>
+<div class="viewer">
 
-<iframe src="lech101.pdf"></iframe>
+<iframe
+    src="lech101.pdf#toolbar=1&navpanes=0&scrollbar=1"
+    title="NCERT Chemistry Chapter 1 - Solutions">
+</iframe>
 
-<br><br>
+</div>
 
-<a href="lech101.pdf" target="_blank" class="download">
+<a href="lech101.pdf"
+   target="_blank"
+   class="download">
 📥 Download PDF
 </a>
+
+<footer>
+© 2026 NEET Notes | Chemistry NCERT
+</footer>
 
 </body>
 </html>
